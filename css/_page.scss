@@ -1,0 +1,387 @@
+.page-title{
+	text-align: center;
+	font-size: 3em;
+	margin: 1.4em 0;
+	font-weight: 600;
+	font-family: $primary;
+	@include media(500px){
+			margin-bottom:.4em;
+		}
+}
+
+.page-sections{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1.5em;
+	font-family: $secondary;
+	
+
+	a{
+		padding: 1em;
+		color: $mid-gray;
+		display:inline-block;
+		
+	}
+}
+
+.section-title{
+	font-family: $secondary;
+	font-size: 1.5em;
+	margin-left: .5em;
+	display: block;
+
+	@include media(500px){
+		margin-left: 1.25em;
+	}
+}
+
+main{
+	overflow: auto;
+	margin: 0;
+}
+
+
+
+
+//art styling
+.artist{
+	font-weight: 600;
+	font-size: 1.8em;
+	font-family: $primary;
+
+}
+
+.title{
+	font-size: 1.8em;
+	font-family: $primary;
+	
+}
+
+.info{
+	font-size: 1.6em;
+	color: $mid-gray;
+	font-family: $primary;
+	margin-top: .5em;
+}
+
+a.plus{
+	font-size: 5em;
+	color: $mid-light-gray;
+	font-family: $primary;
+
+}
+
+//secondary nav
+#secondary-nav{
+	overflow: auto;
+	background-color: $white;
+
+}
+
+#sort-by{
+	font-weight: 600;
+	margin-left: 1em;
+	display:inline-block;
+	overflow: auto;
+	vertical-align: top;
+}
+
+.center{
+	overflow: auto;
+	display:inline-block;
+	a{
+		display: inline-block;
+	}
+}
+
+#price{
+
+}
+
+#size{
+
+}
+
+#medium{
+
+}
+
+
+
+#sort-by, #price, #size, #medium {
+	padding: .6em;
+	border: 1px solid $primary-blue;
+	font-size: 2em;
+	background-color: $white;
+	margin: 0;
+	@include media(402px){
+		padding: .6em;
+	}
+
+}
+
+
+.pagination{
+	text-align: center;
+	margin-bottom: 4em;
+	font-family: $secondary;
+	font-size: 2.5em;
+	padding: 0;
+
+	li{
+		padding: 1em;
+		margin: 0;
+	}
+}
+
+
+//Collection page
+
+.jumbo{
+	background: $primary-blue url(../images/background.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+	position: relative;
+
+	@include media(500px){
+		width: 80%;
+		height: 340px;
+		margin: 2em auto 0 auto;
+	}
+
+	.site-title{
+		position: absolute;
+		bottom: 0;
+		left: -2em;
+		background-color: $white;
+		padding: 1em; 
+	}
+}
+
+.curator{
+	overflow: auto;
+	margin: 0 2em;
+}
+
+#your-gallery{
+	margin-top: 2em;
+
+}
+
+.laine{
+	overflow: auto;
+	background: $primary-blue url(../images/c15.jpg) no-repeat center center;
+	background-size: cover;
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin-top: 2em;
+	margin-right: 2em;
+}
+
+
+
+//Landing Page
+
+.splash{
+	background: $white url(../images/h1.jpg) no-repeat 50% 75%; 
+	height: 400px;
+	background-size: 100%;
+
+
+	@include media(800px){
+		background-size: 90%;
+		height: 500px;
+
+	}
+	
+}
+
+.splash-title{
+	text-align: center;
+	font-family: $secondary;
+	font-size:  7em;
+	color: $white;
+	text-shadow: 1px 1px 1px $black;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+
+	@include media(800px){
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+
+}
+.sign-in{
+	overflow: auto;
+	width: 100%;
+	@include media(800px){
+		width: 90%;
+		margin: 0 auto;
+
+	}
+}
+.sign-in-paragraph{
+	float:right;
+	width: 300px;
+	text-align: right;
+	color: $white;
+}
+
+.black{
+	
+	font-size: 2em;
+}
+
+.landing-wrapper{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about{
+	overflow: auto;
+
+}
+
+.about-image{
+	background: $primary-blue url(../images/h2.jpg) no-repeat top left;
+	height: 200px;
+	width: 300px;
+	background-size: cover;
+	float: right;
+	@include clearfix;
+
+	@include media(900px){
+		float:left;
+	}
+	
+}
+
+.about-title{
+	font-family: $secondary;
+	font-size: 3em;
+	width:100%;
+	max-width: 500px;
+	font-weight: 600;
+	padding: .6em;
+
+	@include media(900px){
+		float:right;
+		padding: 1.2em .6em;
+	}
+
+}
+
+.about-text{
+	font-size: 2em;
+	font-family: $secondary;
+	width: 100%;
+	max-width: 500px;
+	padding: 1em;
+	line-height: 1.8em;
+	@include media(900px){
+		float:right;
+		padding-top: 0;
+		margin-top: -.2em;
+	}
+
+}
+
+.how{
+	margin-top: 5em;
+	overflow: auto;
+	border-top: 1px solid $primary-blue;
+	border-bottom: 1px solid $primary-blue;
+	padding: 5em;
+
+	@include media(600px){
+		padding: 0 0 2em 0;
+		margin-top: 10em;
+	}
+}
+
+.how-section-title{
+	font-family: $secondary;
+	font-size: 3em;
+	width:100%;
+	max-width: 500px;
+	font-weight: 600;
+	padding: 1em 0;
+}
+
+.step-1, .step-2, .step-3{
+	overflow: auto;
+}
+
+.number{
+	display:block;
+	width: 37px;
+	height: 37px;
+	text-align: center;
+	border-radius: 25px;
+	border: 1px solid $primary-blue;
+	font-family: $secondary;
+	color: $primary-blue;
+	font-size: 3em;
+	float: left;
+	margin-bottom: .5em;
+
+	@include media(600px){
+		margin-bottom: 0;
+	}
+
+}
+
+.how-box{
+	float: left;
+	max-width: 700px;
+	overflow: auto;
+	margin-left: 2em;
+	margin-right: 2em;
+
+	@include media(900px){
+		margin-right: 0;
+	}
+
+
+}
+
+.how-title{
+	font-family: $primary;
+	font-size: 2em;
+	font-weight: 600;
+
+
+}
+
+.how-text{
+	font-family: $primary;
+	font-size: 2em;
+
+}
+
+.recent{
+	font-family: $secondary;
+	font-size: 3em;
+	font-weight: 600;
+	padding: 3em 0;
+	text-align: center;
+}
+
+.main-wrap{
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	max-height: 2690px;
+	overflow-y: hidden;
+}
+
+
+
+
+
+

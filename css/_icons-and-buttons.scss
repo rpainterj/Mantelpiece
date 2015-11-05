@@ -1,0 +1,60 @@
+#search {
+    font-family: $primary;
+    width: 70%;
+    border:none;
+    outline:none;
+  
+      
+}
+
+
+#nav-search{
+width: 100%;
+display: inline-block;
+margin-right: 1em;
+@include media(500px){
+    float: right;
+    width: auto;
+    margin-right: 1em;
+}
+}
+
+#nav-search{
+    padding: .33em .6em;
+    border: 1px solid $primary-blue;
+    font-size: 2em;
+    background-color: $white;
+    margin: 0;
+    overflow: auto;
+    @include media(402px){
+        padding: .33em .33em .33em .6em;
+    }
+}
+
+/* ----------------------- */
+
+#submit{       
+    background-color: $primary-blue;
+    border:none;
+    color: $white;    
+    font-family: $primary;
+    font-size: 1em;
+    float:right;
+    width: 30%;
+    outline: none;
+}
+
+#submit:hover {       
+    background-color: $mid-gray;
+}   
+
+#submit:active {   
+    border: none;
+    box-shadow: none;    
+    outline: 0;
+          
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
