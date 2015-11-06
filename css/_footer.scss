@@ -3,18 +3,25 @@ footer{
 	border-top: 1px solid $primary-blue;
 
 	p{
-		text-align: center;
-		margin-bottom: 2em;
+		margin-bottom: 2rem;
 	}
 }
 
 
 
 .footer-nav{
-	margin: 4em 0;
+	margin: 4rem 0;
+	padding: 0;
+
+	
 	li{
-		padding: 2em;
-		font-size: 1.4em;
+		padding: 2rem;
+		font-size: 1.4rem;
+		display: block;
+
+		@include media(600px){
+			display: inline-block;
+		}
 		
 	}
 

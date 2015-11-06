@@ -363,6 +363,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.italic {
+  font-style: italic; }
+
+.semibold {
+  font-weight: 600; }
+
 .artist {
   margin: 1em 0 0 0; }
 
@@ -372,21 +378,18 @@ html {
 .info {
   margin: 1em 0 0 0; }
 
-.plus {
-  float: right; }
-
-.primary-button {
-  padding: .4em;
-  border: 1px solid #0c6993;
-  font-size: 1.8em;
-  background-color: #0c6993;
-  margin: 0;
-  color: white; }
-  @media screen and (min-width: 402px) {
-    .primary-button {
-      padding: .4em; } }
-  .primary-button:visited {
-    color: white; }
+.owl-theme .owl-controls .owl-buttons div {
+  background-color: gray;
+  color: white;
+  font-family: "adelle-sans", helvetica, sans-serif;
+  padding: .6rem 4rem 1rem 4rem;
+  font-size: 1.8rem;
+  border-radius: 0;
+  vertical-align: middle;
+  margin: 2rem 1rem 2rem 1rem; }
+  @media screen and (min-width: 500px) {
+    .owl-theme .owl-controls .owl-buttons div {
+      margin: 2rem 1rem 2rem 1rem; } }
 
 * {
   box-sizing: border-box; }
@@ -394,13 +397,13 @@ html {
 html {
   font-size: 10px; }
 
-h1 {
-  margin: 1em; }
-
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   font-weight: normal; }
+
+h1 {
+  margin: 1rem; }
 
 ul {
   list-style-type: none;
@@ -410,8 +413,9 @@ ul {
 
 a {
   text-decoration: none;
-  overflow: auto; }
-  a::hover {
+  overflow: auto;
+  color: black; }
+  a:hover {
     color: gray; }
   a:visited {
     color: black; }
@@ -423,88 +427,107 @@ a {
   width: 100%;
   height: auto; }
 
-.logo {
+.header-logo {
   width: 40px;
   height: 40px;
   display: inline-block;
-  background: black; }
+  background: black;
+  vertical-align: top; }
 
-.site-title {
-  display: inline-block; }
-  .site-title h1 {
-    display: inline-block;
+.header-title {
+  display: inline-block;
+  overflow: auto; }
+  .header-title h1 {
+    display: block;
     margin: 0;
-    font-size: 4em;
+    font-size: 4rem;
     font-family: "kepler-std-semicondensed", georgia, serif; }
 
-.main-nav {
-  display: inline-block;
+.header-nav {
+  display: block;
   float: right;
   text-transform: uppercase;
-  margin-top: 2.5m; }
-  .main-nav a {
-    font-size: 2em; }
-  .main-nav li {
-    padding: 1em; }
+  overflow: auto; }
+  .header-nav ul {
+    padding: 0;
+    overflow: auto;
+    display: inline-block;
+    margin: 0; }
+  .header-nav a {
+    font-size: 1.8rem;
+    display: block; }
+  .header-nav li {
+    margin: 1rem; }
 
 header {
   overflow: auto;
   border-bottom: 1px solid #0c6993; }
 
-.page-title {
+.catalog {
+  margin: 0;
+  overflow: auto; }
+
+.catalog-title {
   text-align: center;
-  font-size: 3em;
-  margin: 1.4em 0;
+  font-size: 3rem;
+  margin: 3rem 0;
   font-weight: 600;
   font-family: "adelle-sans", helvetica, sans-serif; }
   @media screen and (min-width: 500px) {
-    .page-title {
-      margin-bottom: .4em; } }
+    .catalog-title {
+      margin-bottom: 1em; } }
 
-.page-sections {
+.catalog-sections {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 1.5em;
+  font-size: 2rem;
+  margin-bottom: 1em;
   font-family: "kepler-std-semicondensed", georgia, serif; }
-  .page-sections a {
+  .catalog-sections a {
     padding: 1em;
     color: gray;
     display: inline-block; }
 
 .section-title {
   font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 1.5em;
-  margin-left: .5em;
+  font-size: 1.5rem;
+  margin-left: 1rem;
   display: block; }
   @media screen and (min-width: 500px) {
     .section-title {
-      margin-left: 1.25em; } }
-
-main {
-  overflow: auto;
-  margin: 0; }
+      margin-left: 2rem; } }
 
 .artist {
   font-weight: 600;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-family: "adelle-sans", helvetica, sans-serif; }
 
 .title {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-family: "adelle-sans", helvetica, sans-serif; }
 
 .info {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: gray;
   font-family: "adelle-sans", helvetica, sans-serif;
-  margin-top: .5em; }
+  margin-top: .5rem; }
 
 a.plus {
-  font-size: 5em;
+  font-size: 5rem;
   color: #a8a8a8;
-  font-family: "adelle-sans", helvetica, sans-serif; }
+  font-family: "adelle-sans", helvetica, sans-serif;
+  float: right; }
+
+a.minus {
+  font-size: 2rem;
+  color: #a8a8a8;
+  font-family: "adelle-sans", helvetica, sans-serif;
+  float: right; }
+
+#special-collections {
+  overflow: auto;
+  margin: 4rem auto; }
 
 #secondary-nav {
   overflow: auto;
@@ -533,18 +556,22 @@ a.plus {
     #sort-by, #price, #size, #medium {
       padding: .6em; } }
 
+.browse-all {
+  margin: 0;
+  overflow: auto; }
+
 .pagination {
   text-align: center;
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
   font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 0; }
   .pagination li {
-    padding: 1em;
+    padding: 1rem;
     margin: 0; }
 
 .jumbo {
-  background: #0c6993 url(../images/background.jpg) no-repeat center center;
+  background: white url(../images/background.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 200px;
@@ -564,6 +591,8 @@ a.plus {
 .curator {
   overflow: auto;
   margin: 0 2em; }
+  .curator .primary-button {
+    vertical-align: bottom; }
 
 #your-gallery {
   margin-top: 2em; }
@@ -728,12 +757,110 @@ a.plus {
   padding: 3em 0;
   text-align: center; }
 
-.main-wrap {
+.piece-wrapper {
+  overflow: auto; }
+
+.detail {
+  overflow: auto;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.detail-wrapper {
+  overflow: auto;
   width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  max-height: 2690px;
-  overflow-y: hidden; }
+  max-width: 500px;
+  margin: 0 auto; }
+  @media screen and (min-width: 1100px) {
+    .detail-wrapper {
+      margin-top: 2em;
+      max-width: 1100px;
+      float: left; } }
+
+.detail-image {
+  max-height: 500px;
+  height: 80%;
+  display: block; }
+  @media screen and (min-width: 1100px) {
+    .detail-image {
+      float: left; } }
+
+.detail-wrapper-inside {
+  overflow: auto;
+  width: 100%;
+  padding: 1rem; }
+  @media screen and (min-width: 1100px) {
+    .detail-wrapper-inside {
+      float: left;
+      width: 500px;
+      padding: 0 2rem 2rem 2rem; } }
+
+.detail-artist {
+  font-size: 2rem;
+  font-family: "adelle-sans", helvetica, sans-serif;
+  font-weight: 600;
+  margin: 1rem 0 .5rem 0; }
+  @media screen and (min-width: 1100px) {
+    .detail-artist {
+      margin-top: 2rem; } }
+
+.detail-title {
+  font-size: 2rem;
+  font-family: "adelle-sans", helvetica, sans-serif;
+  margin-bottom: .5rem; }
+
+.detail-info {
+  font-size: 2rem;
+  color: gray;
+  margin-bottom: 2rem; }
+
+.detail-price {
+  border-top: 1px solid rgba(12, 105, 147, 0.15);
+  border-bottom: 1px solid rgba(12, 105, 147, 0.15);
+  font-family: "adelle-sans", helvetica, sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 400px;
+  padding: .25em 0;
+  margin-bottom: 2rem; }
+
+.detail-collections {
+  font-size: 2.5rem;
+  font-family: "kepler-std-semicondensed", georgia, serif; }
+
+.detail-history {
+  font-size: 1.8rem;
+  font-family: "adelle-sans", helvetica, sans-serif;
+  color: gray;
+  margin-bottom: 2rem; }
+
+.artist-bio {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto; }
+  @media screen and (min-width: 1100px) {
+    .artist-bio {
+      margin-top: 4em;
+      width: 50%;
+      max-width: 1100px;
+      float: left;
+      border-top: 1px solid rgba(12, 105, 147, 0.15);
+      padding-top: 4rem; } }
+
+.artist-bio-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background: white url(../images/artist.jpg) no-repeat center;
+  margin-left: 1rem; }
+
+.artist-bio-name {
+  font-family: "kepler-std-semicondensed", georgia, serif;
+  font-size: 2.5rem; }
+
+.artist-bio-info {
+  font-family: "kepler-std-semicondensed", georgia, serif;
+  font-size: 2rem;
+  padding: 1rem; }
 
 .small-image {
   max-width: 200px;
@@ -794,14 +921,18 @@ footer {
   text-align: center;
   border-top: 1px solid #0c6993; }
   footer p {
-    text-align: center;
-    margin-bottom: 2em; }
+    margin-bottom: 2rem; }
 
 .footer-nav {
-  margin: 4em 0; }
+  margin: 4rem 0;
+  padding: 0; }
   .footer-nav li {
-    padding: 2em;
-    font-size: 1.4em; }
+    padding: 2rem;
+    font-size: 1.4rem;
+    display: block; }
+    @media screen and (min-width: 600px) {
+      .footer-nav li {
+        display: inline-block; } }
 
 #search {
   font-family: "adelle-sans", helvetica, sans-serif;
@@ -812,23 +943,23 @@ footer {
 #nav-search {
   width: 100%;
   display: inline-block;
-  margin-right: 1em; }
+  margin-right: 1rem; }
   @media screen and (min-width: 500px) {
     #nav-search {
       float: right;
       width: auto;
-      margin-right: 1em; } }
+      margin-right: 1rem; } }
 
 #nav-search {
-  padding: .33em .6em;
+  padding: .33rem .6rem;
   border: 1px solid #0c6993;
-  font-size: 2em;
+  font-size: 2rem;
   background-color: white;
   margin: 0;
   overflow: auto; }
   @media screen and (min-width: 402px) {
     #nav-search {
-      padding: .33em .33em .33em .6em; } }
+      padding: .33rem .33rem .33rem .6rem; } }
 
 /* ----------------------- */
 #submit {
@@ -836,10 +967,11 @@ footer {
   border: none;
   color: white;
   font-family: "adelle-sans", helvetica, sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   float: right;
   width: 30%;
-  outline: none; }
+  outline: none;
+  border-radius: none; }
 
 #submit:hover {
   background-color: gray; }
@@ -852,5 +984,53 @@ footer {
 #submit::-moz-focus-inner {
   border: 0;
   /* Small centering fix for Firefox */ }
+
+.primary-button-input {
+  background-color: #0c6993;
+  text-decoration: none;
+  border: 0;
+  color: white;
+  font-size: 1.8rem;
+  padding: .5em 1em; }
+  .primary-button-input:hover {
+    background-color: white;
+    color: #0c6993;
+    border: 2px solid #0c6993;
+    box-sizing: content-box; }
+  .primary-button-input:focus, .primary-button-input:active {
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.primary-button {
+  padding: .5rem;
+  border: 1px solid #0c6993;
+  font-size: 1.8rem;
+  background-color: #0c6993;
+  margin: 0;
+  color: white;
+  display: inline-block;
+  text-decoration: none; }
+  @media screen and (min-width: 402px) {
+    .primary-button {
+      padding: .5rem; } }
+  .primary-button:visited {
+    color: white; }
+
+.secondary-button {
+  padding: .4rem;
+  border: 1px solid #0c6993;
+  font-size: 1.8rem;
+  background-color: white;
+  margin: 0;
+  color: white;
+  display: inline-block; }
+  @media screen and (min-width: 402px) {
+    .secondary-button {
+      padding: .4rem; } }
+  .secondary-button:visited {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

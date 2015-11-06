@@ -10,21 +10,20 @@
 	margin: 1em 0 0 0;
 }
 
-.plus{
-	float: right;
-}
 
-.primary-button{
-	padding: .4em;
-	border: 1px solid $primary-blue;
-	font-size: 1.8em;
-	background-color: $primary-blue;
-	margin: 0;
+//Owl Carousel
+
+.owl-theme .owl-controls .owl-buttons div{
+	background-color: $mid-gray;
 	color: $white;
-	@include media(402px){
-		padding: .4em;
-	}
-	&:visited{
-		color: $white;
+	font-family: $primary;
+	padding: .6rem 4rem 1rem 4rem;
+	font-size: 1.8rem;
+	border-radius: 0;
+	vertical-align: middle;
+	margin: 2rem 1rem 2rem 1rem;
+	
+	@include media(500px){
+		margin: 2rem 1rem 2rem 1rem;
 	}
 }

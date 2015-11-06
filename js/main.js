@@ -6,14 +6,26 @@ $(document).ready(function() {
      
       itemsCustom : [
         [0, 2],
-        [450, 4],
+        [700, 3],
+        [900, 4],
+        [1100, 5],
         
       ],
-      navigation : true
+      navigation: true,
+      pagination : true
+
  
   });
 
   $("#secondary-nav").stick_in_parent();
  
+});
+
+
+
+$('a.plus').on('click', function(){
+
+	$('a.plus').toggleClass("A B");
+
 });
 

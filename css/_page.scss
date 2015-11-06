@@ -1,22 +1,29 @@
-.page-title{
+//Catalog Page
+
+.catalog{
+	margin: 0;
+	overflow: auto;
+
+}
+
+.catalog-title{
 	text-align: center;
-	font-size: 3em;
-	margin: 1.4em 0;
+	font-size: 3rem;
+	margin: 3rem 0;
 	font-weight: 600;
 	font-family: $primary;
 	@include media(500px){
-			margin-bottom:.4em;
+			margin-bottom: 1em;
 		}
 }
 
-.page-sections{
+.catalog-sections{
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-size: 2em;
-	margin-bottom: 1.5em;
+	font-size: 2rem;
+	margin-bottom: 1em;
 	font-family: $secondary;
-	
 
 	a{
 		padding: 1em;
@@ -28,49 +35,55 @@
 
 .section-title{
 	font-family: $secondary;
-	font-size: 1.5em;
-	margin-left: .5em;
+	font-size: 1.5rem;
+	margin-left: 1rem;
 	display: block;
 
 	@include media(500px){
-		margin-left: 1.25em;
+		margin-left: 2rem;
 	}
 }
 
-main{
-	overflow: auto;
-	margin: 0;
-}
-
-
-
-
-//art styling
+//Art Styling
 .artist{
 	font-weight: 600;
-	font-size: 1.8em;
+	font-size: 1.8rem;
 	font-family: $primary;
 
 }
 
 .title{
-	font-size: 1.8em;
+	font-size: 1.8rem;
 	font-family: $primary;
 	
 }
 
 .info{
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	color: $mid-gray;
 	font-family: $primary;
-	margin-top: .5em;
+	margin-top: .5rem;
 }
 
 a.plus{
-	font-size: 5em;
+	font-size: 5rem;
 	color: $mid-light-gray;
 	font-family: $primary;
+	float:right;
 
+}
+
+a.minus{
+	font-size: 2rem;
+	color: $mid-light-gray;
+	font-family: $primary;
+	float:right;
+
+}
+
+#special-collections{
+	overflow: auto;
+	margin: 4rem auto;
 }
 
 //secondary nav
@@ -122,16 +135,21 @@ a.plus{
 
 }
 
+.browse-all{
+	margin: 0;
+	overflow: auto;
+}
+
 
 .pagination{
 	text-align: center;
-	margin-bottom: 4em;
+	margin-bottom: 4rem;
 	font-family: $secondary;
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	padding: 0;
 
 	li{
-		padding: 1em;
+		padding: 1rem;
 		margin: 0;
 	}
 }
@@ -140,7 +158,7 @@ a.plus{
 //Collection page
 
 .jumbo{
-	background: $primary-blue url(../images/background.jpg) no-repeat center center;
+	background: $white url(../images/background.jpg) no-repeat center center;
 	background-size: cover;
 	width: 100%;
 	height: 200px;
@@ -164,6 +182,10 @@ a.plus{
 .curator{
 	overflow: auto;
 	margin: 0 2em;
+
+	.primary-button{
+		vertical-align: bottom;
+	}
 }
 
 #your-gallery{
@@ -372,13 +394,158 @@ a.plus{
 	text-align: center;
 }
 
-.main-wrap{
-	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
-	max-height: 2690px;
-	overflow-y: hidden;
+
+//Piece Page
+
+.piece-wrapper{
+	overflow: auto;
+
 }
+
+.detail{
+	overflow: auto;
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+
+.detail-wrapper{
+	overflow: auto;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+
+	@include media(1100px){
+		margin-top: 2em;
+		max-width: 1100px;
+		float:left;
+	}
+
+}
+
+
+.detail-image{
+	max-height: 500px;
+	height: 80%;
+	display: block;	
+
+	@include media(1100px){
+		float:left;
+
+	}
+
+}
+
+.detail-wrapper-inside{
+	overflow: auto;
+	width: 100%;
+	padding: 1rem;
+
+	@include media(1100px){
+		float: left;
+		width: 500px;
+		padding: 0 2rem 2rem 2rem;
+	}
+}
+
+.detail-artist{
+	font-size: 2rem;
+	font-family: $primary;
+	font-weight: 600;
+	margin: 1rem 0 .5rem 0;
+
+	@include media(1100px){
+		margin-top: 2rem;
+	}
+}
+
+.detail-title{
+	font-size: 2rem;
+	font-family: $primary;
+	margin-bottom: .5rem;
+}
+
+.detail-info{
+	font-size: 2rem;
+	color: $mid-gray;
+	margin-bottom: 2rem;
+
+}
+
+.detail-price{
+	border-top: 1px solid $secondary-blue;
+	border-bottom: 1px solid $secondary-blue;
+	font-family: $primary;
+	font-size: 2rem;
+	width: 100%;
+	max-width: 400px;
+	padding: .25em 0;
+	margin-bottom: 2rem; 
+}
+
+.detail-collections{
+	font-size: 2.5rem;
+	font-family: $secondary;
+}
+
+.detail-history{
+	font-size: 1.8rem;
+	font-family: $primary;
+	color: $mid-gray;
+	margin-bottom: 2rem;
+}
+
+
+.detail-add-now{
+
+}
+
+.detail-curator{
+
+}
+
+.artist-bio{
+	width: 100%;
+	max-width: 500px;
+	margin: 2rem auto;
+
+	@include media(1100px){
+		margin-top: 4em;
+		width: 50%;
+		max-width: 1100px;
+		float:left;
+		border-top: 1px solid $secondary-blue;
+		padding-top: 4rem;
+	}
+
+}
+
+.artist-bio-image{
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	background: $white url(../images/artist.jpg) no-repeat center;
+	margin-left: 1rem;
+}
+
+.artist-bio-name{
+	font-family: $secondary;
+	font-size: 2.5rem;
+
+}
+
+.artist-bio-info{
+	font-family: $secondary;
+	font-size: 2rem;
+	padding: 1rem;
+
+}
+
+
+
+
+
+
 
 
 
