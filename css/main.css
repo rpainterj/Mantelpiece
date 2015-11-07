@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -533,28 +534,43 @@ a.minus {
   overflow: auto;
   background-color: white; }
 
-#sort-by {
-  font-weight: 600;
-  margin-left: 1em;
+.styled-select {
+  position: relative;
   display: inline-block;
-  overflow: auto;
-  vertical-align: top; }
+  padding: .5rem .25rem;
+  border-radius: 0; }
 
-.center {
-  overflow: auto;
-  display: inline-block; }
-  .center a {
-    display: inline-block; }
-
-#sort-by, #price, #size, #medium {
-  padding: .6em;
+.select {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  /* remove focus ring from Webkit */
+  line-height: 3rem;
+  background: white;
+  color: black;
   border: 1px solid #0c6993;
-  font-size: 2em;
-  background-color: white;
-  margin: 0; }
-  @media screen and (min-width: 402px) {
-    #sort-by, #price, #size, #medium {
-      padding: .6em; } }
+  border-radius: 0;
+  font-size: 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px; }
+  .select option {
+    padding: 2rem;
+    margin: 2rem; }
+
+/* Select arrow styling */
+.styled-select:after {
+  content: "▼";
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  bottom: 0;
+  font-size: 1.8rem;
+  line-height: 30px;
+  padding: 0 1rem;
+  color: black; }
 
 .browse-all {
   margin: 0;
@@ -934,44 +950,39 @@ footer {
       .footer-nav li {
         display: inline-block; } }
 
+#nav-search {
+  border: 1px solid #0c6993;
+  font-size: 2rem;
+  background-color: white;
+  overflow: auto;
+  width: 100%;
+  display: inline-block;
+  margin: .25rem;
+  padding-left: .25rem;
+  max-width: 450px; }
+  @media screen and (min-width: 500px) {
+    #nav-search {
+      float: left;
+      margin-top: .5rem; } }
+
 #search {
   font-family: "adelle-sans", helvetica, sans-serif;
   width: 70%;
   border: none;
-  outline: none; }
+  outline: none;
+  margin: .5rem 0; }
 
-#nav-search {
-  width: 100%;
-  display: inline-block;
-  margin-right: 1rem; }
-  @media screen and (min-width: 500px) {
-    #nav-search {
-      float: right;
-      width: auto;
-      margin-right: 1rem; } }
-
-#nav-search {
-  padding: .33rem .6rem;
-  border: 1px solid #0c6993;
-  font-size: 2rem;
-  background-color: white;
-  margin: 0;
-  overflow: auto; }
-  @media screen and (min-width: 402px) {
-    #nav-search {
-      padding: .33rem .33rem .33rem .6rem; } }
-
-/* ----------------------- */
 #submit {
   background-color: #0c6993;
   border: none;
   color: white;
   font-family: "adelle-sans", helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   float: right;
   width: 30%;
   outline: none;
-  border-radius: none; }
+  border-radius: none;
+  padding: .6rem 0; }
 
 #submit:hover {
   background-color: gray; }

@@ -141,34 +141,44 @@
 
 	<section id="secondary-nav"> 
 			
-			<div id="sort-by">
-			Newest art <span class="arrow"></span>
+			<label class="styled-select">
+				<select class="select" id="sort-by">
+					<option> Newest art </option>
+					<option> Alphabetical by Artist </option>
+					<option> Available Now </option>
+					<option> Price: Low to High </option>
+					<option> Price High to Low </option>
+				</select>
+			</label>
 
+			<div class="styled-select">
+				<select class="select"  id="price">
+					<option> Price </option>
+					<option> Under $100 </option>
+					<option>$100-$500 </option>
+					<option>$500-$1000</option>
+					<option>$1000-2000</option>
+					<option>Over $2000</option>
+				</select>
 			</div>
-			
-			<div class="center">
-				<select id="price"> <span class="arrow"></span>
-					<option disabled>Price</option>
-					<option>Price</option>
-					<option>Price</option>
+
+			<div class="styled-select">
+				<select class="select" id="size">
+					<option> Size </option>
+					<option> Small (190)</option>
+					<option> Medium (1,429)</option>
+					<option> Large (1,128) </option>
+					<option> Extra-Large (253) </option>
 				</select>
+			</div>
 
-				<select id="size"> <span class="arrow"></span>
-					<option disabled> Size </option>
-					<option> Small </option>
-					<option> Medium </option>
-					<option> Large </option>
-					<option> Extra-Large </option>
-
-				</select>
-
-				<select id="medium"><span class="arrow"></span>
-					<option disabled> Medium</option>
+			<div class="styled-select">
+				<select class="select" id="medium">
+					<option> Medium</option>
 					<option> Drawing (513)</option>
 					<option> Painting (640) </option>
-					<option> Photography (1,100)</option>
-					<option> Prints (456)</option>
-
+					<option> Photography (1,105)</option>
+					<option> Prints (742)</option>
 				</select>
 			</div>
 

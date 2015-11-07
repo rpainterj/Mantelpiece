@@ -86,54 +86,99 @@ a.minus{
 	margin: 4rem auto;
 }
 
-//secondary nav
+
+
+//Secondary Nav
 #secondary-nav{
 	overflow: auto;
 	background-color: $white;
 
 }
 
-#sort-by{
-	font-weight: 600;
-	margin-left: 1em;
-	display:inline-block;
-	overflow: auto;
-	vertical-align: top;
-}
-
-.center{
-	overflow: auto;
-	display:inline-block;
-	a{
-		display: inline-block;
-	}
-}
-
-#price{
+.styled-select {
+    position: relative;
+    display: inline-block;
+    padding: .5rem .25rem;
+    border-radius: 0;
 
 }
 
-#size{
+    .select {
+        display: inline-block;
+        padding: .5rem;
+        margin: 0;
+        font: inherit;
+        outline:none; /* remove focus ring from Webkit */
+        line-height: 3rem;
+        background: $white;
+        color: $black;
+        border: 1px solid $primary-blue;
+        border-radius: 0;
+        font-size: 2rem;
+        appearance: none;
+         -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 
-}
+        option{
+        	padding: 2rem;
+        	margin: 2rem;
+        }
+    }
 
-#medium{
+/* Select arrow styling */
+    .styled-select:after {
+        content: "▼";
+        position: absolute;
+        top: 12px;
+        right: 0px;
+        bottom: 0;
+        font-size: 1.8rem;
+        line-height: 30px;
+        padding: 0 1rem;
+        color: $black;
+    }
+    
 
-}
+// #sort-by{
+// 	vertical-align: top;
+// 	background: transparent;
+//    	width: 268px;
+//    	padding: 5px;
+//    	font-size: 16px;
+//    	line-height: 1;
+//    	border: 0;
+//    	border-radius: 0;
+//    	height: 34px;
+//     -webkit-appearance: none;
+// }
+// .center{
+// 	overflow: auto;
+// 	display:inline-block;
+// }
 
+// #price{
 
+// }
 
-#sort-by, #price, #size, #medium {
-	padding: .6em;
-	border: 1px solid $primary-blue;
-	font-size: 2em;
-	background-color: $white;
-	margin: 0;
-	@include media(402px){
-		padding: .6em;
-	}
+// #size{
 
-}
+// }
+
+// #medium{
+
+// }
+
+// #sort-by, #price, #size, #medium {
+// 	padding: .6em;
+// 	border: 1px solid $primary-blue;
+// 	font-size: 2em;
+// 	background-color: $white;
+// 	margin: 0;
+// 	@include media(402px){
+// 		padding: .6em;
+// 	}
+
+// }
 
 .browse-all{
 	margin: 0;
