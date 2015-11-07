@@ -988,15 +988,15 @@ footer {
 .primary-button-input {
   background-color: #0c6993;
   text-decoration: none;
-  border: 0;
+  border: 2px solid #0c6993;
   color: white;
   font-size: 1.8rem;
-  padding: .5em 1em; }
+  padding: .5em 1em;
+  box-sizing: content-box;
+  margin-bottom: 1rem; }
   .primary-button-input:hover {
     background-color: white;
-    color: #0c6993;
-    border: 2px solid #0c6993;
-    box-sizing: content-box; }
+    color: #0c6993; }
   .primary-button-input:focus, .primary-button-input:active {
     border: 0;
     box-shadow: none;

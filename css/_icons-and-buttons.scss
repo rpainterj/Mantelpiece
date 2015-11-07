@@ -63,16 +63,17 @@ margin-right: 1rem;
 .primary-button-input{
     background-color: $primary-blue;
     text-decoration: none;
-    border: 0;
+    border: 2px solid $primary-blue;
     color: $white;
     font-size: 1.8rem;
     padding: .5em 1em;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
 
     &:hover{
         background-color: $white;
         color: $primary-blue;
-        border: 2px solid $primary-blue;
-        box-sizing: content-box;
+
     }
 
     &:focus, &:active{
