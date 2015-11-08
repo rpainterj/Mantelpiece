@@ -109,6 +109,32 @@
 
 }
 
+#secondary-nav-mobile-toggle{
+	overflow: auto;
+
+	@include media(700px){
+		display:none;
+	}
+
+}
+
+#secondary-nav-mobile{
+	display:none;
+	overflow: hidden;
+	background-color: $light-gray;
+}
+
+#secondary-nav-large{
+	overflow:auto;
+	display:none;
+
+	@include media(700px){
+		display: inline-block;
+		width: auto;
+	}
+
+}
+
 .styled-select {
     position: relative;
     display: inline-block;

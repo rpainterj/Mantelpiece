@@ -152,8 +152,12 @@
 
 
 	<section id="secondary-nav"> 
-			
-			<label class="styled-select">
+		<div id="secondary-nav-mobile-toggle">
+			<h1> Show Search Options </h1>
+		</div>
+
+		<div id="secondary-nav-mobile">
+			<div class="styled-select">
 				<select class="select" id="sort-by">
 					<option> Newest art </option>
 					<option> Alphabetical by Artist </option>
@@ -161,7 +165,7 @@
 					<option> Price: Low to High </option>
 					<option> Price High to Low </option>
 				</select>
-			</label>
+			</div>
 
 			<div class="styled-select">
 				<select class="select"  id="price">
@@ -193,11 +197,57 @@
 					<option> Prints (742)</option>
 				</select>
 			</div>
+	    </div>
 
-			<form id="nav-search" action="">
-				<input id="search" type= "text" placeholder="Search Art and Artists...">
-				<input id="submit" type="submit" value="Search">
-			</form>
+		<div id="secondary-nav-large">
+			<div class="styled-select">
+				<select class="select" id="sort-by">
+					<option> Newest art </option>
+					<option> Alphabetical by Artist </option>
+					<option> Available Now </option>
+					<option> Price: Low to High </option>
+					<option> Price High to Low </option>
+				</select>
+			</div>
+
+			<div class="styled-select">
+				<select class="select"  id="price">
+					<option> Price </option>
+					<option> Under $100 </option>
+					<option>$100-$500 </option>
+					<option>$500-$1000</option>
+					<option>$1000-2000</option>
+					<option>Over $2000</option>
+				</select>
+			</div>
+
+			<div class="styled-select">
+				<select class="select" id="size">
+					<option> Size </option>
+					<option> Small (190)</option>
+					<option> Medium (1,429)</option>
+					<option> Large (1,128) </option>
+					<option> Extra-Large (253) </option>
+				</select>
+			</div>
+
+			<div class="styled-select">
+				<select class="select" id="medium">
+					<option> Medium</option>
+					<option> Drawing (513)</option>
+					<option> Painting (640) </option>
+					<option> Photography (1,105)</option>
+					<option> Prints (742)</option>
+				</select>
+			</div>
+	    </div>
+
+		<form id="nav-search" action="">
+			<input id="search" type= "text" placeholder="Search Art and Artists...">
+			<input id="submit" type="submit" value="Search">
+		</form>
+
+
 	</section>
 
 	<section class="browse-all">

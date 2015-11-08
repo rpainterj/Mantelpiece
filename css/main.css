@@ -581,6 +581,25 @@ header {
   overflow: auto;
   background-color: white; }
 
+#secondary-nav-mobile-toggle {
+  overflow: auto; }
+  @media screen and (min-width: 700px) {
+    #secondary-nav-mobile-toggle {
+      display: none; } }
+
+#secondary-nav-mobile {
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9; }
+
+#secondary-nav-large {
+  overflow: auto;
+  display: none; }
+  @media screen and (min-width: 700px) {
+    #secondary-nav-large {
+      display: inline-block;
+      width: auto; } }
+
 .styled-select {
   position: relative;
   display: inline-block;
