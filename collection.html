@@ -6,21 +6,21 @@
 	  <meta charset="utf-8">
 	  <title>Mantelpiece</title>
 	  <script src="https://use.typekit.net/kpl4zmu.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+	  <link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
 	  <link type="text/css" rel="stylesheet" href="css/main.css">
-	  <!-- Important Owl stylesheet -->
-		<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
 	</head>
 
 <body>
 <header>
-	<a href="#" class="logo">
+	<a href="#" class="header-logo">
 		
 	</a>
-	<a href="#" class="site-title">
+	<a href="#" class="header-title">
 		<h1> Mantelpiece </h1>
 	</a>
-	<nav>
+	<nav class="header-nav">
 		<ul>
 			<a href="landing.html"><li> Home </li></a>
 			<a href="index.html"><li> Catalog </li></a>
@@ -32,13 +32,17 @@
 </header>
 
 <main>
+<h1 class="catalog-title">MARIEL MULLER</h1>
 	<div class="jumbo">
-		<a href="#" class="site-title"><h1> Mariel Muller </h1></a>
+		<!-- <a href="#" class="jumbo-title"><h1> Mariel Muller </h1></a> -->
 	</div>
 
 	<section id="your-gallery">
-		<a href="#" class="section-title"><h2>Your Current Gallery | Days Remaining: 31 </h2></a>
-		<a class="primary-button"> Request a new gallery </a>
+		<div class="your-gallery-nav">
+			<h2 class="your-gallery-title">Your Current Gallery | Days Remaining: 31 </h2>
+			<button type="submit" class="primary-button-input"> Request a new gallery </button>
+		</div>
+
 		<div id="first-carousel" class="owl-carousel owl-theme">
 			<div class ="medium-image">
 				<a href="#"><img src="images/c4.jpg" class="medium-item"></a>
@@ -47,8 +51,8 @@
 				Pine Dreams </h4></a><p class="info"> 
 				Monotype 	  <br>
 				36" x 24 </p>
-				<a href="#" class="secondary-button"> Buy </a>
-				<a href="#" class="secondary-button"> Manage </a>
+				<a href="#" class="primary-action"> Buy </a>
+				<a href="#" class="secondary-action"> Manage </a>
 			</div>
 
 			<div class ="medium-image">
@@ -58,8 +62,8 @@
 				Splendor </h4></a><p class="info"> 
 				Oil on Canvas	  <br>
 				40" x 20" </p>
-				<a href="#" class="secondary-button"> Buy </a>
-				<a href="#" class="secondary-button"> Manage </a>
+				<a href="#" class="primary-action"> Buy </a>
+				<a href="#" class="secondary-action"> Manage </a>
 			</div>
 
 			<div class ="medium-image">
@@ -69,8 +73,8 @@
 				Velazquez</h4></a><p class="info"> 
 				Oil on Canvas 	  <br>
 				30" x 20" </p>
-				<a href="#" class="secondary-button"> Buy </a>
-				<a href="#" class="secondary-button"> Manage</a>
+				<a href="#" class="primary-action"> Buy </a>
+				<a href="#" class="secondary-action"> Manage</a>
 
 			</div>
 
@@ -81,28 +85,25 @@
 				10K </h4></a><p class="info"> 
 				Photograph	  <br>
 				9" x 13" </p>
-				<a href="#" class="secondary-button"> Buy </a>
-				<a href="#" class="secondary-button"> Manage </a>
+				<a href="#" class="primary-action"> Buy </a>
+				<a href="#" class="secondary-action"> Manage </a>
 			</div>
 
 		</div>
 	</section>
 
-	
-	<section id="secondary-nav"> 
-			
-			
-	</section>
+	<main id= "your-collection">
+		<div class="your-collection-nav">
+			<h2 class="your-collection-title">
+				Your Collection (11) </h2>
+				
 
-	<main>
-		<a href="#" class="section-title"><h2>
-			Your Collection (11) </h2></a>
-			
+			<form id="nav-search" action="">
+					<input id="search" type= "text" placeholder="Search Collection...">
+					<input id="submit" type="submit" value="Search">
+			</form>
+		</div>
 
-		<form id="nav-search" action="">
-				<input id="search" type= "text" placeholder="Search Collection...">
-				<input id="submit" type="submit" value="Search">
-		</form>
 		<section>
 
 			<div class ="large-image">
@@ -120,7 +121,7 @@
 				<a href="#"><h3 class="artist">
 				William French </h3></a><a href="#"><h4 class="title"> 
 				Country Road </h4></a><p class="info">
-				Photography <br>
+				Photography <span class="minus"></span><br>
 				9" x 13" </p>
 				
 			</div>
@@ -130,7 +131,7 @@
 				<a href="#"><h3 class="artist">
 				William French</h3></a><a href="#"><h4 class="title"> 
 				One Afternoon, Out Walking</h4></a><p class="info">
-				Photography <br>
+				Photography <span class="minus"></span><br>
 				9" x 13" </p>
 				
 			</div>
@@ -140,7 +141,7 @@
 				<a href="#"><h3 class="artist">
 				Dani Brawdy </h3></a><a href="#"><h4 class="title"> 
 				Michelangelo </h4></a><p class="info">
-				Drawing <br>
+				Drawing <span class="minus"></span><br>
 				24" x 18" </p>
 				
 			</div>
@@ -150,7 +151,7 @@
 				<a href="#"><h3 class="artist">
 				Connor Mighell </h3></a><a href="#"><h4 class="title"> 
 				Nude Study I </h4></a><p class="info">
-				Drawing <br>
+				Drawing <span class="minus"></span><br>
 				16" x 16" </p>
 				
 			</div>
@@ -160,7 +161,7 @@
 				<a href="#"><h3 class="artist">
 				Connor Mighell </h3></a><a href="#"><h4 class="title"> 
 				Nude Study II </h4></a><p class="info">
-				Drawing <br>
+				Drawing <span class="minus"></span><br>
 				16" x 20" </p>
 				
 			</div>
@@ -170,7 +171,7 @@
 				<a href="#"><h3 class="artist">
 				Connor Mighell </h3></a><a href="#"><h4 class="title"> 
 				Nude Study III </h4></a><p class="info">
-				Drawing  <br>
+				Drawing  <span class="minus"></span><br>
 				14" x 20" </p>
 				
 			</div>
@@ -180,7 +181,7 @@
 				<a href="#"><h3 class="artist">
 				Emily Early </h3></a><a href="#"><h4 class="title"> 
 				Vanish Series I </h4></a><p class="info">
-				Acrylic  <br>
+				Acrylic  <span class="minus"></span><br>
 				24" x 18" </p>
 				
 			</div>
@@ -190,7 +191,7 @@
 				<a href="#"><h3 class="artist">
 				Emily Early </h3></a><a href="#"><h4 class="title"> 
 				Vanish Series II </h4></a><p class="info">
-				Acrylic <br>
+				Acrylic <span class="minus"></span><br>
 				24" x 18" </p>
 				
 			</div>
@@ -200,7 +201,7 @@
 				<a href="#"><h3 class="artist">
 				Emily Early</h3></a><a href="#"><h4 class="title"> 
 				Shroud </h4></a><p class="info">
-				Oil on Canvas <br>
+				Oil on Canvas <span class="minus"></span><br>
 				31" x 21" </p>
 				
 			</div>
@@ -210,7 +211,7 @@
 				<a href="#"><h3 class="artist">
 				Dani Brawdy </h3></a><a href="#"><h4 class="title"> 
 				Piano </h4></a><p class="info">
-				Photography <br>
+				Photography <span class="minus"></span><br>
 				9" x 13" </p>
 				
 			</div>
@@ -219,16 +220,17 @@
 			
 	</main>
 
-	<section>
-		<a href="#" class="section-title"><h2>Your Curator: Laine Koons</h2></a>
-		<div class="curator">
+	<section class="curator">
+		<h2 class="curator-title">Your Curator: Laine Koons</h2>
+		<div class="curator-wrapper">
 			<div class="laine"></div>
 			<a href="#"><h3 class="artist"> Recent Articles </h3></a>
 			<a href="#"><h4 class="title"> 25 Artists to See at the 2015  East Austin Studio Tour</h4></a>
 			<a href="#"><h4 class="title"> How to Light Your Work Properly</h4></a>
-			<p class="info"> &ldquo;Art is a conversation. The more time you spend with the piece, the more it starts talking.&rdquo;</p>
-			<a href="#" class="primary-button"> Send Laine a Message </a>	
+			<p class="info italic"> &ldquo;Art is a conversation. The more time you spend with the piece, the more it starts talking.&rdquo;</p>
+			<button class="primary-button-input"> Send Laine a Message </a>	
 		</div>
+	</section>
 
 <footer>
 	<ul class="footer-nav">

@@ -23,9 +23,14 @@ $(document).ready(function() {
 
 
 
-$('a.plus').on('click', function(){
+$('span.plus, span.minus').click(function(){
 
-	$('a.plus').toggleClass("A B");
+	$(this).toggleClass("plus minus");
 
 });
 
+
+
+$('.nav-toggle').click(function(){
+  $('.mobile-header-nav').slideToggle();
+});

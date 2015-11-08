@@ -12,8 +12,9 @@
 	margin: 3rem 0;
 	font-weight: 600;
 	font-family: $primary;
+	
 	@include media(500px){
-			margin-bottom: 1em;
+			margin-bottom: 1rem;
 		}
 }
 
@@ -22,11 +23,11 @@
 	padding: 0;
 	text-align: center;
 	font-size: 2rem;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
 	font-family: $secondary;
 
 	a{
-		padding: 1em;
+		padding: 1rem;
 		color: $mid-gray;
 		display:inline-block;
 		
@@ -65,19 +66,32 @@
 	margin-top: .5rem;
 }
 
-a.plus{
-	font-size: 5rem;
-	color: $mid-light-gray;
-	font-family: $primary;
-	float:right;
+.plus{
+	height: 40px;
+	width: 40px;
+	background: url(../images/plus.svg) no-repeat center;
+	float: right;
+	display: inline;
+
+	@include media(500px){
+		height: 20px;
+		width: 20px;
+	}
+
 
 }
 
-a.minus{
-	font-size: 2rem;
-	color: $mid-light-gray;
-	font-family: $primary;
-	float:right;
+.minus{
+	height: 40px;
+	width: 40px;
+	background: url(../images/minus.svg) no-repeat center;
+	float: right;
+	display: inline;
+
+	@include media(500px){
+		height: 20px;
+		width: 20px;
+	}
 
 }
 
@@ -202,41 +216,132 @@ a.minus{
 
 //Collection page
 
+// .jumbo{
+// 	background: $white url(../images/background.jpg) no-repeat center center;
+// 	background-size: cover;
+// 	width: 100%;
+// 	height: 200px;
+// 	position: relative;
+
+// 	@include media(500px){
+// 		width: 80%;
+// 		height: 340px;
+// 		margin: 0 auto;
+// 	}
+
+	
+// }
+
+// .jumbo-title{
+// 		position: absolute;
+// 		bottom: 0;
+// 		left: -2em;
+// 		background-color: $white;
+// 		padding: 1em; 
+// }
+
+
 .jumbo{
-	background: $white url(../images/background.jpg) no-repeat center center;
-	background-size: cover;
-	width: 100%;
-	height: 200px;
+	background: $white url(../images/collectionbackground.jpg) no-repeat center center;
+	background-size: 110%;
+	width: 150px;
+	height: 150px;
 	position: relative;
+	border-radius: 100px;
+	margin: 0 auto;
+}
+.curator{
+	margin-top: 2rem;
+	margin-bottom: 10rem;
 
-	@include media(500px){
-		width: 80%;
-		height: 340px;
-		margin: 2em auto 0 auto;
-	}
+}
 
-	.site-title{
-		position: absolute;
-		bottom: 0;
-		left: -2em;
-		background-color: $white;
-		padding: 1em; 
+.curator-wrapper{
+	overflow: auto;
+	margin: 0 2rem;
+
+	.primary-button-input{
+		margin-top: 2rem;
 	}
 }
 
-.curator{
-	overflow: auto;
-	margin: 0 2em;
-
-	.primary-button{
-		vertical-align: bottom;
-	}
+.curator-title{
+	font-size: 2rem;
+	font-family: $secondary;
+	margin-left: 2rem;
 }
 
 #your-gallery{
-	margin-top: 2em;
+	margin-top: 2rem;
+	
+	.your-gallery-nav{
+		overflow:auto;
+		text-align: center;
+	}
 
+	button{
+		margin: 0 2rem 2rem 0;
+		@include clearfix;
+
+		@include media(900px){
+			float: right;
+
+		}
+	}
+
+	#first-carousel{
+		margin-bottom: 4rem;
+		
+	}
+
+	.info{
+		margin-bottom: 2rem;
+	}
 }
+
+
+.your-gallery-title, .your-collection-title{
+	font-size: 2rem;
+	color: $black;
+	display: inline-block;
+	margin: 0;
+	margin-left: 2rem;
+	font-family: $secondary;
+	margin-bottom: 2rem;
+
+	@include media(900px){
+		float:left;
+	}
+}
+
+.your-gallery-title{
+	margin-right: 2rem;
+}
+
+#your-collection{
+	margin-top: 2em;
+	overflow: auto;
+	
+	.your-collection-nav{
+		overflow:auto;
+		text-align: center;
+	}
+
+	.your-collection-title{
+		float:left;
+	}
+
+	form{
+		margin: 0 2rem;
+		float:left;
+
+		@include media(900px){
+			float: right;
+
+		}
+	}
+}
+
 
 .laine{
 	overflow: auto;
@@ -247,6 +352,7 @@ a.minus{
 	height: 200px;
 	margin-top: 2em;
 	margin-right: 2em;
+	border-radius: 100px;
 }
 
 

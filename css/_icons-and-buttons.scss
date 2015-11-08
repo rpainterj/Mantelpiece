@@ -56,7 +56,7 @@
 .primary-button-input{
     background-color: $primary-blue;
     text-decoration: none;
-    border: 2px solid $primary-blue;
+    border: 1px solid $primary-blue;
     color: $white;
     font-size: 1.8rem;
     padding: .5em 1em;
@@ -77,39 +77,67 @@
           box-shadow: none;
     }
 
-
-
 }
 
 .primary-button{
-    padding: .5rem;
+    padding: .5em 1em;
+    margin: 0;
+    font-size: 1.8rem;
+    border: 1px solid $primary-blue;
+    background-color: $primary-blue;
+    color: $white;
+    box-sizing: content-box;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $white;
+        color: $primary-blue;
+
+    }
+    
+    @include media(402px){
+        padding: .5rem;
+    }
+   
+}
+
+.primary-action{
+    padding: 1rem;
     border: 1px solid $primary-blue;
     font-size: 1.8rem;
     background-color: $primary-blue;
     margin: 0;
-    color: $white;
+    color: $light-gray;
     display: inline-block;
-    text-decoration: none;
-    @include media(402px){
-        padding: .5rem;
+
+    &:hover {
+        background-color: $light-gray;
+        color: $primary-blue;
     }
+
     &:visited{
-        color: $white;
+        color: $light-gray;
     }
+
 }
 
-.secondary-button{
-    padding: .4rem;
-    border: 1px solid $primary-blue;
+.secondary-action{
+    padding: 1rem;
+    border: 1px solid $light-gray;
     font-size: 1.8rem;
-    background-color: $white;
+    background-color: $light-gray;
     margin: 0;
-    color: $white;
+    color: $primary-blue;
     display: inline-block;
-    @include media(402px){
-        padding: .4rem;
+
+    &:hover{
+        background-color: $light-gray;
+        border-color: $primary-blue;
     }
+
     &:visited{
-        color: $white;
+        color: $primary-blue;
     }
+
 }
