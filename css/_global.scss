@@ -32,11 +32,11 @@ a{
 	color: $black;
 	
 	&:hover{
-		color: $mid-gray;
+		color: inherit;
 	}
 
 	&:visited{
-		color: $black;
+		color: inherit;
 	}
 }
 

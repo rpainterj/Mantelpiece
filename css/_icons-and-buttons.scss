@@ -39,7 +39,9 @@
 }
 
 #submit:hover {       
-    background-color: $mid-gray;
+    background-color: $white;
+    color: $primary-blue;
+    border-left: 1px solid $primary-blue;
 }   
 
 #submit:active {   
@@ -114,6 +116,10 @@
     &:hover {
         background-color: $light-gray;
         color: $primary-blue;
+
+        &:visited{
+            color: $primary-blue;
+        }
     }
 
     &:visited{
@@ -134,6 +140,10 @@
     &:hover{
         background-color: $light-gray;
         border-color: $primary-blue;
+    
+        &:visited{
+            color: $primary-blue;
+        }
     }
 
     &:visited{

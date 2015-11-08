@@ -30,6 +30,9 @@
 		padding: 1rem;
 		color: $mid-gray;
 		display:inline-block;
+		&:hover{
+			color: $primary-blue;
+		}
 		
 	}
 }
@@ -143,6 +146,24 @@
 
 }
 
+#sort-by{
+	min-width: 220px;
+}
+
+#price{
+	min-width: 150px;
+}
+
+#size{
+	min-width: 190px;
+}
+
+#medium{
+	min-width: 215px;
+}
+
+
+
     .select {
         display: inline-block;
         padding: .5rem;
@@ -157,7 +178,7 @@
         font-size: 2rem;
         appearance: none;
          -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+        -webkit-border-radius: 0px;
 
         option{
         	padding: 2rem;
@@ -237,6 +258,10 @@
 		padding: 1rem;
 		margin: 0;
 	}
+	a:hover{
+		color: $primary-blue;
+	}
+	
 }
 
 
@@ -562,13 +587,53 @@
 	font-size: 2em;
 
 }
+.recent-wrapper{
+	width: 100%;
+	overflow: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 6rem;
+
+}
 
 .recent{
 	font-family: $secondary;
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: 600;
-	padding: 3em 0;
 	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.recent-action{
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.actions-wrapper{
+	width: 100%;
+	overflow: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
+
+	a{
+		clear: both;
+		margin: 2rem 1rem;
+	}
+}
+
+
+.main-wrapper{
+	.small-image{
+		display: block;
+		float: left;
+	}
+
 }
 
 
@@ -646,6 +711,8 @@
 	font-size: 2rem;
 	color: $mid-gray;
 	margin-bottom: 2rem;
+	max-width: 400px;
+
 
 }
 
@@ -663,13 +730,14 @@
 .detail-collections{
 	font-size: 2.5rem;
 	font-family: $secondary;
+	margin-bottom: 2rem;
 }
 
 .detail-history{
 	font-size: 1.8rem;
 	font-family: $primary;
 	color: $mid-gray;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
 
 

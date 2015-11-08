@@ -1,29 +1,22 @@
 .small-image{
 	max-width: 200px;
-	margin: 1em 0 1em 1em;
+	margin: 1rem 0 1rem 1rem;
 }
 
 .medium-image{
 	max-width: 200px;
-	margin: 1em 0 1em 1em;
+	margin: 1rem 0 1rem 1rem;
 
 }
 
 .large-image{
 	max-width:300px;
-	margin: 4em;
-
-	a{
-		
-
-	}
+	margin: 4rem;
 
 	&:nth-child(3n+4){
 		clear:left;
 
 	}
-
-
 
 	&:last-child{
 		@include clearfix;
@@ -33,17 +26,15 @@
 @media screen and (min-width:500px){
 	.small-image{
 		max-width: 200px;
-		margin: 2em;
+		margin: 2rem;
 	}
 
 	.medium-image{
 		max-width: 200px;
-		margin: 2em;
+		margin: 2rem;
 	}
 
 	.large-image{
-		max-width:300px;
-		margin: 4em;
 		float: left;
 	}
 
@@ -72,11 +63,6 @@
 	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 }
-
-
-
-
-
 
 .small-item{
 	width: 200px;

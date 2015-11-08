@@ -15,6 +15,10 @@
 		font-size: 4rem;
 		font-family: $secondary;
 	}
+
+	&:hover{
+		color: $primary-blue;
+	}
 }
 
 .header-nav{
@@ -35,6 +39,9 @@
 		font-size: 1.8rem;
 		display:block;
 		display:inline;
+		&:hover{
+			color: $primary-blue;
+		}
 
 		
 	}
@@ -105,10 +112,17 @@ header{
 
     }
 
+    a:hover{
+    	color: $primary-blue;
+    }
+
+}
 
 
+.nav-active{
+	border-bottom: 4px solid red;
 
-
+	font-weight: 600;
 
 }
 

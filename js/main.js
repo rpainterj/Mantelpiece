@@ -22,14 +22,26 @@ $(document).ready(function() {
 });
 
 
+//Make Saved Artwork disappear
 
 $('span.plus, span.minus').click(function(){
+	if (top.location.pathname === '/piece.html')
+	{
+	    $(this).toggleClass("plus minus");
+	}
 
-	$(this).toggleClass("plus minus");
+	else {
 
+	$(this).parent().parent().hide();
+
+}
+	
 });
 
 
+
+
+//Menu Toggle
 
 $('.nav-toggle').click(function(){
   $('.mobile-header-nav').slideToggle();
@@ -41,6 +53,24 @@ $('#secondary-nav-mobile-toggle').click(function(){
 });
 
 
+
+
+//Active State for Menu
+
+var url = window.location.href;
+
+// Will only work if string in href matches with location
+$('.header-nav a[href="'+ url +'"]').addClass('nav-active');
+
+// Will also work for relative and absolute hrefs
+$('.header-nav a').filter(function() {
+    return this.href == url;
+}).addClass('nav-active');
+
+
+
+// For toggling plus/minus classes
+// $(this).toggleClass("plus minus");
 
 
 
