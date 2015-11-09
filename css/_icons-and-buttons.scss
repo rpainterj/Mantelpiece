@@ -3,12 +3,13 @@
     border: 1px solid $primary-blue;
     font-size: 2rem;
     background-color: $white;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     display: inline-block;
     margin: .25rem;
     padding-left: .25rem;
     max-width: 450px;
+    height: 40px;
     
     @include media(500px){
         float: left;
@@ -34,7 +35,7 @@
     width: 30%;
     outline: none;
     border-radius: 0;
-    padding: .6rem 0;
+    padding: .7rem 0;
 
 }
 
