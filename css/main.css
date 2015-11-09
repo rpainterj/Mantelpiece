@@ -787,8 +787,7 @@ header {
   @media screen and (min-width: 700px) {
     .splash-title {
       margin-top: 6rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid #0c6993; } }
+      padding-bottom: 1rem; } }
 
 .splash-tag {
   font-family: "kepler-std-semicondensed", georgia, serif;
@@ -797,10 +796,11 @@ header {
   font-weight: 600;
   margin: 3rem 0;
   text-align: center;
-  color: white; }
+  color: #0c6993; }
   @media screen and (min-width: 700px) {
     .splash-tag {
-      margin: 0; } }
+      margin: 0;
+      background-color: white; } }
 
 .sign-in {
   overflow: auto;
@@ -945,6 +945,17 @@ header {
   margin: 0;
   vertical-align: middle; }
 
+.landing-browse-all div {
+  margin-bottom: 5rem; }
+.landing-browse-all div:nth-child(n+5) {
+  display: none; }
+@media screen and (min-width: 770px) {
+  .landing-browse-all div:nth-child(n+7) {
+    display: none; } }
+@media screen and (min-width: 1150px) {
+  .landing-browse-all div:nth-child(n) {
+    display: block; } }
+
 .actions-wrapper {
   width: 100%;
   overflow: auto;
@@ -957,9 +968,11 @@ header {
     clear: both;
     margin: 2rem 1rem; }
 
-.main-wrapper .small-image {
-  display: block;
-  float: left; }
+.main-wrapper {
+  overflow: auto; }
+  .main-wrapper .small-image {
+    display: block;
+    float: left; }
 
 .piece-wrapper {
   overflow: auto; }
@@ -1079,7 +1092,7 @@ header {
 
 .large-image {
   max-width: 300px;
-  margin: 0 auto; }
+  margin: 4rem auto; }
   @media screen and (min-width: 770px) {
     .large-image {
       margin: 4rem;
