@@ -370,6 +370,9 @@ html {
 .semibold {
   font-weight: 600; }
 
+.blue {
+  color: #0c6993; }
+
 .artist {
   margin: 1em 0 0 0; }
 
@@ -426,11 +429,16 @@ a {
     color: inherit; }
 
 .header-logo {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 45px;
   display: inline-block;
-  background: black;
-  vertical-align: top; }
+  background: url(../images/primary-logo-02.svg);
+  vertical-align: bottom;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  @media screen and (min-width: 1100px) {
+    .header-logo {
+      margin-left: 4rem; } }
 
 .header-title {
   display: inline-block;
@@ -464,7 +472,7 @@ a {
   @media screen and (min-width: 700px) {
     .header-nav {
       display: block;
-      margin-top: 2rem; } }
+      margin-top: 1.8rem; } }
 
 header {
   overflow: auto;
@@ -587,7 +595,9 @@ header {
 
 #secondary-nav {
   overflow: auto;
-  background-color: white; }
+  background-color: white;
+  max-width: 1500px;
+  margin: 0 auto; }
 
 #secondary-nav-mobile-toggle {
   overflow: auto; }
@@ -770,12 +780,32 @@ header {
 .splash {
   background: white url(../images/background3small.jpg) no-repeat top left;
   height: 400px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   @media screen and (min-width: 700px) {
     .splash {
       background: url(../images/background4trimmed.jpg) no-repeat top left;
-      max-width: 1400px;
+      max-width: 1333px;
       margin: 0 auto; } }
+
+.splash-logo {
+  height: 180px;
+  width: 220px;
+  background: url(../images/primary-logo-02.svg);
+  display: inline-block;
+  color: #0c6993;
+  position: absolute;
+  bottom: 5rem;
+  margin: 0 auto;
+  left: 0; }
+  @media screen and (min-width: 700px) {
+    .splash-logo {
+      height: 225px;
+      width: 275px;
+      background: url(../images/whitelogos-04.svg);
+      left: 0;
+      right: 0;
+      bottom: 0; } }
 
 .splash-title {
   text-align: center;
@@ -804,7 +834,8 @@ header {
 
 .sign-in {
   overflow: auto;
-  width: 100%; }
+  display: inline-block;
+  float: right; }
   @media screen and (min-width: 800px) {
     .sign-in {
       width: 90%;
@@ -814,7 +845,8 @@ header {
   float: right;
   width: 300px;
   text-align: right;
-  color: #0c6993; }
+  color: #0c6993;
+  margin-top: 2rem; }
 
 .black {
   font-size: 2rem; }
@@ -827,7 +859,10 @@ header {
 
 .about {
   overflow: auto;
-  margin-top: 2rem; }
+  margin-top: 4rem; }
+  @media screen and (min-width: 700px) {
+    .about {
+      margin-top: 8rem; } }
 
 .about-image {
   background: #0c6993 url(../images/amira.jpg) no-repeat top left;
@@ -869,19 +904,19 @@ header {
 .step-1 .icon {
   width: 200px;
   height: 200px;
-  background: url(../images/icons-03.png) no-repeat center;
+  background: url(../images/icons-03.svg) no-repeat center;
   margin: 0 auto; }
 
 .step-2 .icon {
   width: 200px;
   height: 200px;
-  background: url(../images/icons-02.png) no-repeat center;
+  background: url(../images/icons-02.svg) no-repeat center;
   margin: 0 auto; }
 
 .step-3 .icon {
   width: 200px;
   height: 200px;
-  background: url(../images/icons-01.png) no-repeat center;
+  background: url(../images/icons-01.svg) no-repeat center;
   margin: 0 auto; }
 
 .how {
@@ -922,6 +957,8 @@ header {
   line-height: 1.6em;
   max-width: 500px;
   margin: 0 auto; }
+  .how-text a:hover {
+    color: #0c6993; }
 
 .recent-wrapper {
   width: 100%;
@@ -945,8 +982,6 @@ header {
   margin: 0;
   vertical-align: middle; }
 
-.landing-browse-all div {
-  margin-bottom: 5rem; }
 .landing-browse-all div:nth-child(n+5) {
   display: none; }
 @media screen and (min-width: 770px) {
@@ -1165,7 +1200,7 @@ footer {
   float: right;
   width: 30%;
   outline: none;
-  border-radius: none;
+  border-radius: 0;
   padding: .6rem 0; }
 
 #submit:hover {

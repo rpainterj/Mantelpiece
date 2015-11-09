@@ -24,19 +24,19 @@ $(document).ready(function() {
 
 //Make Saved Artwork disappear
 
-$('span.plus, span.minus').click(function(){
-	if (top.location.pathname === '/piece.html')
-	{
-	    $(this).toggleClass("plus minus");
-	}
+// $('span.plus, span.minus').click(function(){
+// 	if (top.location.pathname === '/piece.html')
+// 	{
+// 	    $(this).toggleClass("plus minus");
+// 	}
 
-	else {
+// 	else {
 
-	$(this).parent().parent().hide();
+// 	$(this).parent().parent().hide();
 
-}
+// }
 	
-});
+// });
 
 
 
@@ -70,9 +70,14 @@ $('.header-nav a').filter(function() {
 
 
 // For toggling plus/minus classes
-// $(this).toggleClass("plus minus");
 
 
+
+
+$('span.plus, span.minus').click(function(){
+    $(this).toggleClass("plus minus");
+  
+});
 
 
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0C6993;}
+	.st1{fill:#F9F9F9;}
+	.st2{fill:none;}
+	.st3{fill:none;stroke:#F9F9F9;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#0C6993;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:#F9F9F9;stroke:#F9F9F9;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:#0C6993;stroke:#F9F9F9;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#F9F9F9;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_2_);fill:#F9F9F9;}
+	.st9{clip-path:url(#SVGID_2_);fill:none;stroke:#F9F9F9;stroke-miterlimit:10;}
+	.st10{clip-path:url(#SVGID_2_);fill:#0C6993;}
+	.st11{clip-path:url(#SVGID_2_);}
+	.st12{clip-path:url(#SVGID_4_);fill:#0C6993;}
+	.st13{clip-path:url(#SVGID_4_);fill:#F9F9F9;}
+	.st14{clip-path:url(#SVGID_4_);}
+</style>
+<g>
+	<defs>
+		<circle id="SVGID_3_" cx="100" cy="100" r="100"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+	</clipPath>
+	<circle class="st10" cx="100" cy="100" r="100"/>
+	<rect x="60" y="140" class="st8" width="80" height="80"/>
+	<polygon class="st8" points="50,120 60,130 140,130 150,120 	"/>
+	<rect x="60" y="131" class="st8" width="80" height="8"/>
+	<path class="st10" d="M70,220v-67c0,0,22.5-5,30-5s30,5,30,5v67H70z"/>
+	<path class="st10" d="M70,153c0,0,0-5,30-5s30,5,30,5"/>
+	<polygon class="st8" points="71,44.6 86,51.8 86,84.6 71,91.9 	"/>
+	<polygon class="st8" points="90,48.2 90,77.3 108,80.9 108,52.6 	"/>
+	<polygon class="st8" points="112,44.6 112,91.9 130,88.2 130,40.9 	"/>
+	<polygon class="st8" points="60,31 67,38 67,96 132,96 139,103 60,103 	"/>
+	<g class="st11">
+		<path class="st1" d="M139,31v69.6l-5-5l-0.3-58.3l0-1l-1,0L67.4,36l-5-5H139 M140,30H60l7,7l65.7,0.3L133,96l7,7V30L140,30z"/>
+	</g>
+</g>
+</svg>
