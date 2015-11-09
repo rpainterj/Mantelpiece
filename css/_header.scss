@@ -31,8 +31,7 @@
 		padding: 0;
 		overflow: auto;
 		display:inline-block;
-		margin: 0;
-		
+		margin: 0;	
 	}
 
 	a{
@@ -41,9 +40,7 @@
 		display:inline;
 		&:hover{
 			color: $primary-blue;
-		}
-
-		
+		}		
 	}
 
 	li{
@@ -54,8 +51,6 @@
 		display:block;
 		margin-top: 2rem;
 	}
-
-
 }
 
 
@@ -82,7 +77,6 @@ header{
 	@include media(700px){
 		display:none;
 	}
-
 }
 
 .mobile-header-nav{
@@ -102,7 +96,6 @@ header{
     	li{
     		display:block;
     		padding: 1rem;
-
     	}
 
     	a:nth-child(odd){
@@ -120,8 +113,6 @@ header{
 
 
 .nav-active{
-	border-bottom: 4px solid red;
-
 	font-weight: 600;
 
 }

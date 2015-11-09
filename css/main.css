@@ -398,6 +398,10 @@ html {
 html {
   font-size: 10px; }
 
+body {
+  max-width: 1500px;
+  margin: 0 auto; }
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -420,13 +424,6 @@ a {
     color: inherit; }
   a:visited {
     color: inherit; }
-
-.medium-image img {
-  width: 100%; }
-
-.small-image img {
-  width: 100%;
-  height: auto; }
 
 .header-logo {
   width: 40px;
@@ -508,7 +505,6 @@ header {
     color: #0c6993; }
 
 .nav-active {
-  border-bottom: 4px solid red;
   font-weight: 600; }
 
 .catalog {
@@ -529,7 +525,7 @@ header {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   font-family: "kepler-std-semicondensed", georgia, serif; }
   .catalog-sections a {
@@ -663,8 +659,12 @@ header {
   color: black; }
 
 .browse-all {
-  margin: 0;
-  overflow: auto; }
+  margin: 2rem auto 0 auto;
+  overflow: auto;
+  max-width: 770px; }
+  @media screen and (min-width: 1150px) {
+    .browse-all {
+      max-width: 1150px; } }
 
 .pagination {
   text-align: center;
@@ -755,34 +755,52 @@ header {
   overflow: auto;
   background: #0c6993 url(../images/c15.jpg) no-repeat center center;
   background-size: cover;
-  float: left;
-  width: 200px;
-  height: 200px;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
   margin-top: 2em;
-  margin-right: 2em;
   border-radius: 100px; }
+  @media screen and (min-width: 600px) {
+    .laine {
+      width: 200px;
+      height: 200px;
+      float: left;
+      margin-right: 2em; } }
 
 .splash {
-  background: white url(../images/h1.jpg) no-repeat 50% 75%;
+  background: white url(../images/background3small.jpg) no-repeat top left;
   height: 400px;
-  background-size: 100%; }
-  @media screen and (min-width: 800px) {
+  overflow: hidden; }
+  @media screen and (min-width: 700px) {
     .splash {
-      background-size: 90%;
-      height: 500px; } }
+      background: url(../images/background4trimmed.jpg) no-repeat top left;
+      max-width: 1400px;
+      margin: 0 auto; } }
 
 .splash-title {
   text-align: center;
   font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 7em;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-  padding-top: 1em;
-  padding-bottom: 1.5em; }
-  @media screen and (min-width: 800px) {
+  font-size: 7rem;
+  color: #0c6993;
+  padding: 0;
+  margin: 0; }
+  @media screen and (min-width: 700px) {
     .splash-title {
-      padding-top: 2em;
-      padding-bottom: 1em; } }
+      margin-top: 6rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #0c6993; } }
+
+.splash-tag {
+  font-family: "kepler-std-semicondensed", georgia, serif;
+  font-size: 3rem;
+  width: auto;
+  font-weight: 600;
+  margin: 3rem 0;
+  text-align: center;
+  color: white; }
+  @media screen and (min-width: 700px) {
+    .splash-tag {
+      margin: 0; } }
 
 .sign-in {
   overflow: auto;
@@ -796,114 +814,114 @@ header {
   float: right;
   width: 300px;
   text-align: right;
-  color: white; }
+  color: #0c6993; }
 
 .black {
-  font-size: 2em; }
+  font-size: 2rem; }
 
 .landing-wrapper {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto; }
-
-.about {
+  margin: 0 auto;
   overflow: auto; }
 
+.about {
+  overflow: auto;
+  margin-top: 2rem; }
+
 .about-image {
-  background: #0c6993 url(../images/h2.jpg) no-repeat top left;
+  background: #0c6993 url(../images/amira.jpg) no-repeat top left;
   height: 200px;
-  width: 300px;
-  background-size: cover;
-  float: right; }
+  width: 200px;
+  margin: 0 auto;
+  background-size: cover; }
   .about-image::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 900px) {
     .about-image {
-      float: left; } }
-
-.about-title {
-  font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 3em;
-  width: 100%;
-  max-width: 500px;
-  font-weight: 600;
-  padding: .6em; }
-  @media screen and (min-width: 900px) {
-    .about-title {
-      float: right;
-      padding: 1.2em .6em; } }
+      float: left;
+      margin: 0; } }
 
 .about-text {
-  font-size: 2em;
+  font-size: 2rem;
   font-family: "kepler-std-semicondensed", georgia, serif;
   width: 100%;
   max-width: 500px;
-  padding: 1em;
-  line-height: 1.8em; }
+  padding: 1rem;
+  line-height: 1.6em;
+  padding-top: 0;
+  margin: 0 auto;
+  background-color: white; }
   @media screen and (min-width: 900px) {
     .about-text {
       float: right;
-      padding-top: 0;
-      margin-top: -.2em; } }
+      margin: 0;
+      margin-right: 4rem; } }
+  .about-text a {
+    font-weight: 600; }
+
+.step-1, .step-2, .step-3 {
+  overflow: auto;
+  margin-bottom: 4rem; }
+
+.step-1 .icon {
+  width: 200px;
+  height: 200px;
+  background: url(../images/icons-03.png) no-repeat center;
+  margin: 0 auto; }
+
+.step-2 .icon {
+  width: 200px;
+  height: 200px;
+  background: url(../images/icons-02.png) no-repeat center;
+  margin: 0 auto; }
+
+.step-3 .icon {
+  width: 200px;
+  height: 200px;
+  background: url(../images/icons-01.png) no-repeat center;
+  margin: 0 auto; }
 
 .how {
-  margin-top: 5em;
+  margin-top: 2rem;
   overflow: auto;
   border-top: 1px solid #0c6993;
   border-bottom: 1px solid #0c6993;
-  padding: 5em; }
+  padding: 1rem;
+  background-color: #f9f9f9; }
   @media screen and (min-width: 600px) {
     .how {
-      padding: 0 0 2em 0;
-      margin-top: 10em; } }
+      padding: 0 0 2rem 0;
+      margin-top: 10rem; } }
 
 .how-section-title {
   font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 3em;
-  width: 100%;
-  max-width: 500px;
+  font-size: 3rem;
+  width: auto;
   font-weight: 600;
-  padding: 1em 0; }
-
-.step-1, .step-2, .step-3 {
-  overflow: auto; }
-
-.number {
-  display: block;
-  width: 37px;
-  height: 37px;
-  text-align: center;
-  border-radius: 25px;
-  border: 1px solid #0c6993;
-  font-family: "kepler-std-semicondensed", georgia, serif;
-  color: #0c6993;
-  font-size: 3em;
-  float: left;
-  margin-bottom: .5em; }
-  @media screen and (min-width: 600px) {
-    .number {
-      margin-bottom: 0; } }
+  padding: 1em 0;
+  text-align: center; }
 
 .how-box {
-  float: left;
   max-width: 700px;
   overflow: auto;
-  margin-left: 2em;
-  margin-right: 2em; }
-  @media screen and (min-width: 900px) {
-    .how-box {
-      margin-right: 0; } }
+  margin: 0 auto; }
 
 .how-title {
   font-family: "adelle-sans", helvetica, sans-serif;
-  font-size: 2em;
-  font-weight: 600; }
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem auto; }
 
 .how-text {
   font-family: "adelle-sans", helvetica, sans-serif;
-  font-size: 2em; }
+  font-size: 2rem;
+  line-height: 1.6em;
+  max-width: 500px;
+  margin: 0 auto; }
 
 .recent-wrapper {
   width: 100%;
@@ -911,7 +929,8 @@ header {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  margin-bottom: 4rem; }
 
 .recent {
   font-family: "kepler-std-semicondensed", georgia, serif;
@@ -1049,48 +1068,29 @@ header {
   font-size: 2rem;
   padding: 1rem; }
 
-.small-image {
+.small-image, .medium-image {
   max-width: 200px;
   margin: 1rem 0 1rem 1rem; }
-
-.medium-image {
-  max-width: 200px;
-  margin: 1rem 0 1rem 1rem; }
+  .small-image img, .medium-image img {
+    width: 100%; }
+  @media screen and (min-width: 500px) {
+    .small-image, .medium-image {
+      margin: 2rem; } }
 
 .large-image {
   max-width: 300px;
-  margin: 4rem; }
-  .large-image:nth-child(3n+4) {
-    clear: left; }
-  .large-image:last-child::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-@media screen and (min-width: 500px) {
-  .small-image {
-    max-width: 200px;
-    margin: 2rem; }
-
-  .medium-image {
-    max-width: 200px;
-    margin: 2rem; }
-
-  .large-image {
-    float: left; } }
-#first-carousel .small-image, #first-carousel .medium-image, #second-carousel .small-image, #second-carousel .medium-image {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
-#first-carousel .customNavigation, #second-carousel .customNavigation {
-  text-align: center; }
-#first-carousel .customNavigation a, #second-carousel .customNavigation a {
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent; }
+  margin: 0 auto; }
+  @media screen and (min-width: 770px) {
+    .large-image {
+      margin: 4rem;
+      float: left; }
+      .large-image:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 1150px) {
+    .large-image:nth-child(2n+1) {
+      clear: none; }
+    .large-image:nth-child(3n+4) {
+      clear: left; } }
 
 .small-item {
   width: 200px;

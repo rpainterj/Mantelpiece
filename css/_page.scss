@@ -22,7 +22,7 @@
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	margin-bottom: 1rem;
 	font-family: $secondary;
 
@@ -242,8 +242,16 @@
 // }
 
 .browse-all{
-	margin: 0;
+	margin: 2rem auto 0 auto;
 	overflow: auto;
+	max-width: 770px;
+
+	@include media(1150px){
+		max-width: 1150px;
+
+	}
+
+
 }
 
 
@@ -398,12 +406,19 @@
 	overflow: auto;
 	background: $primary-blue url(../images/c15.jpg) no-repeat center center;
 	background-size: cover;
-	float: left;
-	width: 200px;
-	height: 200px;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
 	margin-top: 2em;
-	margin-right: 2em;
+	
 	border-radius: 100px;
+
+	@include media(600px){
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin-right: 2em;
+	}
 }
 
 
@@ -411,15 +426,17 @@
 //Landing Page
 
 .splash{
-	background: $white url(../images/h1.jpg) no-repeat 50% 75%; 
+	background: $white url(../images/background3small.jpg) no-repeat top left; 
 	height: 400px;
-	background-size: 100%;
+	overflow: hidden;
+	
 
 
-	@include media(800px){
-		background-size: 90%;
-		height: 500px;
-
+	@include media(700px){
+		background: url(../images/background4trimmed.jpg) no-repeat top left;
+		max-width: 1400px;
+		margin: 0 auto;
+		
 	}
 	
 }
@@ -427,18 +444,38 @@
 .splash-title{
 	text-align: center;
 	font-family: $secondary;
-	font-size:  7em;
-	color: $white;
-	text-shadow: 1px 1px 1px $black;
-	padding-top: 1em;
-	padding-bottom: 1.5em;
+	font-size:  7rem;
+	color: $primary-blue;
+	padding: 0;
+	margin: 0;
 
-	@include media(800px){
-		padding-top: 2em;
-		padding-bottom: 1em;
+
+	@include media(700px){
+		margin-top: 6rem;
+		padding-bottom: 1rem;
+		// border-top: 1px solid $primary-blue;
+		border-bottom: 1px solid $primary-blue;
 	}
 
 }
+
+.splash-tag{
+	font-family: $secondary;
+	font-size: 3rem;
+	width:auto;
+	font-weight: 600;
+	margin: 3rem 0;
+	text-align: center; 
+	color: $white;
+	// text-shadow: 1px 1px .25px $black;
+
+	@include media(700px){
+		// @include background-image(linear-gradient($white 0, $white 40%, transparent 100%));
+		margin: 0;
+	}
+
+}
+
 .sign-in{
 	overflow: auto;
 	width: 100%;
@@ -452,139 +489,145 @@
 	float:right;
 	width: 300px;
 	text-align: right;
-	color: $white;
+	color: $primary-blue;
 }
 
 .black{
-	
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .landing-wrapper{
 	width: 100%;
 	max-width: 800px;
 	margin: 0 auto;
+	
+	overflow: auto;
 }
 
 .about{
 	overflow: auto;
-
+	margin-top: 2rem;
+	
 }
 
 .about-image{
-	background: $primary-blue url(../images/h2.jpg) no-repeat top left;
+	background: $primary-blue url(../images/amira.jpg) no-repeat top left;
 	height: 200px;
-	width: 300px;
+	width: 200px;
+	margin: 0 auto;
 	background-size: cover;
-	float: right;
 	@include clearfix;
 
 	@include media(900px){
 		float:left;
+		margin: 0;
 	}
 	
 }
 
-.about-title{
-	font-family: $secondary;
-	font-size: 3em;
-	width:100%;
-	max-width: 500px;
-	font-weight: 600;
-	padding: .6em;
-
-	@include media(900px){
-		float:right;
-		padding: 1.2em .6em;
-	}
-
-}
 
 .about-text{
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: $secondary;
 	width: 100%;
 	max-width: 500px;
-	padding: 1em;
-	line-height: 1.8em;
+	padding: 1rem;
+	line-height: 1.6em;
+	padding-top: 0;
+	margin: 0 auto;
+	background-color: $white;
+	
 	@include media(900px){
 		float:right;
-		padding-top: 0;
-		margin-top: -.2em;
+		margin: 0;
+		margin-right: 4rem;
+		
+	}
+
+	a{
+		font-weight: 600;
 	}
 
 }
 
+.step-1, .step-2, .step-3{
+	overflow: auto;
+	margin-bottom: 4rem;
+
+}
+
+.step-1{
+	.icon{
+		width: 200px;
+		height: 200px;
+		background: url(../images/icons-03.png) no-repeat center;
+		margin: 0 auto;
+	}
+}
+
+.step-2{
+	.icon{
+		width: 200px;
+		height: 200px;
+		background: url(../images/icons-02.png) no-repeat center;
+		margin: 0 auto;
+	}
+}
+
+.step-3{
+	.icon{
+		width: 200px;
+		height: 200px;
+		background: url(../images/icons-01.png) no-repeat center;
+		margin: 0 auto;
+	}
+}
+
 .how{
-	margin-top: 5em;
+	margin-top: 2rem;
 	overflow: auto;
 	border-top: 1px solid $primary-blue;
 	border-bottom: 1px solid $primary-blue;
-	padding: 5em;
+	padding: 1rem;
+	background-color: $light-gray;
 
 	@include media(600px){
-		padding: 0 0 2em 0;
-		margin-top: 10em;
+		padding: 0 0 2rem 0;
+		margin-top: 10rem;
 	}
 }
 
 .how-section-title{
 	font-family: $secondary;
-	font-size: 3em;
-	width:100%;
-	max-width: 500px;
+	font-size: 3rem;
+	width: auto;
 	font-weight: 600;
 	padding: 1em 0;
-}
-
-.step-1, .step-2, .step-3{
-	overflow: auto;
-}
-
-.number{
-	display:block;
-	width: 37px;
-	height: 37px;
 	text-align: center;
-	border-radius: 25px;
-	border: 1px solid $primary-blue;
-	font-family: $secondary;
-	color: $primary-blue;
-	font-size: 3em;
-	float: left;
-	margin-bottom: .5em;
-
-	@include media(600px){
-		margin-bottom: 0;
-	}
-
 }
 
 .how-box{
-	float: left;
 	max-width: 700px;
 	overflow: auto;
-	margin-left: 2em;
-	margin-right: 2em;
-
-	@include media(900px){
-		margin-right: 0;
-	}
-
-
+	margin: 0 auto;
 }
 
 .how-title{
 	font-family: $primary;
-	font-size: 2em;
-	font-weight: 600;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin: 2rem auto;
 
 
 }
 
 .how-text{
 	font-family: $primary;
-	font-size: 2em;
+	font-size: 2rem;
+	line-height: 1.6em;
+	max-width: 500px;
+	margin: 0 auto;
 
 }
 .recent-wrapper{
@@ -594,6 +637,7 @@
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 6rem;
+	margin-bottom: 4rem;
 
 }
 

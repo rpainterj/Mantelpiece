@@ -1,66 +1,37 @@
-.small-image{
-	max-width: 200px;
-	margin: 1rem 0 1rem 1rem;
-}
-
-.medium-image{
+.small-image, .medium-image{
 	max-width: 200px;
 	margin: 1rem 0 1rem 1rem;
 
+	img {
+		width: 100%;
+	}
+
+	@include media(500px){
+		margin: 2rem;
+	}
 }
 
 .large-image{
 	max-width:300px;
-	margin: 4rem;
-
-	&:nth-child(3n+4){
-		clear:left;
-
-	}
-
-	&:last-child{
-		@include clearfix;
-	}
-}
-
-@media screen and (min-width:500px){
-	.small-image{
-		max-width: 200px;
-		margin: 2rem;
-	}
-
-	.medium-image{
-		max-width: 200px;
-		margin: 2rem;
-	}
-
-	.large-image{
-		float: left;
-	}
-
-
-}
-
-#first-carousel, #second-carousel{
-	 .small-image, .medium-image{
+	margin: 0 auto;
 	
+	@include media(770px){
+		margin: 4rem;
+		float:left;
 
-	  -webkit-border-radius: 3px;
-	  -moz-border-radius: 3px;
-	  border-radius: 3px;
-	  
+		&:nth-child(2n+1){
+			clear:left;
+		}
 	}
-	.customNavigation{
-	  text-align: center;
-	}
-	//use styles below to disable ugly selection
-	.customNavigation a{
-	  -webkit-user-select: none;
-	  -khtml-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  user-select: none;
-	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	@include media(1150px){
+		&:nth-child(2n+1){
+			clear:none;
+		}
+
+		&:nth-child(3n+4){
+			clear:left;
+		}
 	}
 }
 
