@@ -5,7 +5,12 @@
 		background: url(../images/primary-logo-02.svg);
 		vertical-align: bottom;
 		margin-left: 1rem;
-		margin-right: 1rem;
+		margin-right: .5rem;
+
+		@include media(500px){
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
 
 		@include media(1100px){
 			margin-left: 4rem;
@@ -19,8 +24,12 @@
 	h1{
 		display: block;
 		margin: 0;
-		font-size: 4rem;
+		font-size: 3.2rem;
 		font-family: $secondary;
+
+		@include media(500px){
+			font-size: 4rem;
+		}
 	}
 
 	&:hover{

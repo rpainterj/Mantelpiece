@@ -440,7 +440,11 @@ a {
   background: url(../images/primary-logo-02.svg);
   vertical-align: bottom;
   margin-left: 1rem;
-  margin-right: 1rem; }
+  margin-right: .5rem; }
+  @media screen and (min-width: 500px) {
+    .header-logo {
+      margin-left: 1rem;
+      margin-right: 1rem; } }
   @media screen and (min-width: 1100px) {
     .header-logo {
       margin-left: 4rem; } }
@@ -451,8 +455,11 @@ a {
   .header-title h1 {
     display: block;
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-family: "kepler-std-semicondensed", georgia, serif; }
+    @media screen and (min-width: 500px) {
+      .header-title h1 {
+        font-size: 4rem; } }
   .header-title:hover {
     color: #0c6993; }
 
@@ -820,10 +827,13 @@ header {
 .splash-title {
   text-align: center;
   font-family: "kepler-std-semicondensed", georgia, serif;
-  font-size: 7rem;
+  font-size: 4rem;
   color: #0c6993;
   padding: 0;
   margin: 0; }
+  @media screen and (min-width: 700px) {
+    .splash-title {
+      font-size: 7rem; } }
   @media screen and (min-width: 700px) {
     .splash-title {
       margin-top: 6rem;

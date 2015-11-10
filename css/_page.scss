@@ -407,10 +407,14 @@
 .splash-title{
 	text-align: center;
 	font-family: $secondary;
-	font-size:  7rem;
+	font-size:  4rem;
 	color: $primary-blue;
 	padding: 0;
 	margin: 0;
+
+	@include media(700px){
+		font-size: 7rem;
+	}
 
 	@include media(700px){
 		margin-top: 6rem;
