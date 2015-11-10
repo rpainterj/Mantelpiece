@@ -24,3 +24,11 @@ $secondary: "kepler-std-semicondensed", georgia, serif;
 .blue{
 	color: $primary-blue;
 }
+
+.black{
+	color: $black;
+
+	&:visited{
+		color:$black;
+	}
+}

@@ -373,6 +373,11 @@ html {
 .blue {
   color: #0c6993; }
 
+.black {
+  color: black; }
+  .black:visited {
+    color: black; }
+
 .artist {
   margin: 1em 0 0 0; }
 
@@ -1029,7 +1034,8 @@ header {
   overflow: auto;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 2rem; }
   @media screen and (min-width: 1100px) {
     .detail-wrapper {
       margin-top: 2em;
