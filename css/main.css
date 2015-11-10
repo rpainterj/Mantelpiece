@@ -601,7 +601,7 @@ header {
 
 #secondary-nav-mobile-toggle {
   overflow: auto; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 804px) {
     #secondary-nav-mobile-toggle {
       display: none; } }
 
@@ -613,7 +613,7 @@ header {
 #secondary-nav-large {
   overflow: auto;
   display: none; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 804px) {
     #secondary-nav-large {
       display: inline-block;
       width: auto; } }
@@ -621,8 +621,11 @@ header {
 .styled-select {
   position: relative;
   display: inline-block;
-  padding: .5rem .25rem;
-  border-radius: 0; }
+  padding: 0;
+  border-radius: 0;
+  padding-right: .5rem; }
+  .styled-select:first-child {
+    padding-left: 0; }
 
 #sort-by {
   min-width: 220px; }
@@ -1176,14 +1179,17 @@ footer {
   overflow: hidden;
   width: 100%;
   display: inline-block;
-  margin: .25rem;
-  padding-left: .25rem;
   max-width: 450px;
-  height: 40px; }
+  height: 42px;
+  margin: 0 0 0 0; }
   @media screen and (min-width: 500px) {
     #nav-search {
       float: left;
-      margin-top: .5rem; } }
+      margin-top: 1px; } }
+  @media screen and (min-width: 1260px) {
+    #nav-search {
+      margin-right: .8rem;
+      margin-top: 0rem; } }
 
 #search {
   font-family: "adelle-sans", helvetica, sans-serif;

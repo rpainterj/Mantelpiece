@@ -1,20 +1,26 @@
 #nav-search{
-   
     border: 1px solid $primary-blue;
     font-size: 2rem;
     background-color: $white;
     overflow: hidden;
     width: 100%;
     display: inline-block;
-    margin: .25rem;
-    padding-left: .25rem;
     max-width: 450px;
-    height: 40px;
+    height: 42px;
+    margin: 0 0 0 0;
     
     @include media(500px){
         float: left;
-        margin-top: .5rem;
+        margin-top: 1px;
+        
     }
+
+    @include media(1260px){
+        margin-right: .8rem;
+        margin-top: 0rem;
+    }
+
+
 }
 
 #search {
